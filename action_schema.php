@@ -39,7 +39,8 @@
 	$ncol = mysql_num_fields($result2);
 	
 	echo '<table>';
-	echo '<form action="demo_form.asp">';
+	echo '<form action="action_insert.php">';
+	echo '<input type="submit" value="Submit">';
 	for ($i = 0; $i < $ncol; $i++) {
 		// echo "<th>" . mysql_field_name($result2, $i);	
 		echo '<tr>';	
@@ -48,7 +49,8 @@
 		echo '</tr>';
 	}
 	echo '</form>';
-	echo '</table>'
+	echo '</table>';
+	echo '<br></br>';
 	?>
 
 	<?php 
