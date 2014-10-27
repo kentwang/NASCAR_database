@@ -6,7 +6,7 @@
 	?>
 
 	<?php 
-	echo '<h2>List car model, make, sponsor\'s name, and driver\'s name where the car\'s mileage is lower than ' . $threshMileage .  ' miles .</h2>'
+	echo '<h2>List driver\'s name, car model, make, sponsor\'s name, and driver\'s name where the car\'s mileage is lower than ' . $threshMileage .  ' miles .</h2>'
 	?>
 	<hr>
 
@@ -39,9 +39,9 @@
     	echo "The lowest mileage of racing cars is " . min($mileage) . " miles !";
     } else { // do the join
     	// $subQuery = "Select * from drivers";
-    	$subQuery = "Select Name, Winnings, Manager_name from drivers, pitcrew where PC_ID = Pitcrew_ID and Num_of_people > " . $numPitcrew;
+    	$subQuery = "Select drivers.name, Model, Make, sponsors.Name from drivers, cars, sponsors where Sp_ID = Sponsor_ID and DR_ID = Driver_ID and Mileage < " . $threshMileage;
     	echo $subQuery;
-    	echo '<br></br>';
+    	echo '<br></br><br></br>';
     	$subResult = mysql_query($subQuery, $link);
 		if (!$subResult) {die( 'Error in SQL: ' . mysql_error());}
 		echo print_table($subResult);

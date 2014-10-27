@@ -55,13 +55,20 @@
 		</li>
 		<li>
 			<form method="post" action="action_thresh_mileage.php">
-				List car model, make, sponsor's name, and driver's name where the car's mileage is lower than <input type="text" name="threshMileage"> miles.
+				List driver's name, car model, make, sponsor's name, and driver's name where the car's mileage is lower than <input type="text" name="threshMileage"> miles.
 				<input type="submit" value="Submit">
 			</form>
 		</li>
 	</ul>
-
 	<hr>
+
+	<h2>Insert Tuple into Table</h2>
+	<form method="post" action="action_schema.php">
+				Input a table name to insert <input type="text" name="tableName"> 
+				<input type="submit" value="Submit"> (Note: Table schema will be displayed after submission.)
+			</form>
+	<hr>
+
 
   	<?php include 'footer.php';?>
 </div>
