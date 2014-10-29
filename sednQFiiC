@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Our Company</title>
+  <link href="Site.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="main">
+  <h1>Welcomes to Ketong (Kent) Wang's Database</h1> 
+  <h2>Web Site Main Ingredients</h2>
+  <?php echo "hello"?>
+
+  <p> (HTML)</p>
+  <p>Style Sheets (CSS)</p>
+  <p>Computer Code (JavaScript)</p>
+  <p>Live Data (Files and Databases)</p>
+  </div>
+
+</body>
+</html>

@@ -6,7 +6,7 @@
 	<?php include 'print_table.php';?>
 
   	<?php
-	$link = mysql_connect("vrbsky-oracle.cs.ua.edu", "usrname", "passwd");
+	$link = mysql_connect("vrbsky-oracle.cs.ua.edu", "usrname", "11499864");
 	if (!$link) {die('Not connected: '. mysql_error()); }  // see if connected
 
 	// Select DB will use

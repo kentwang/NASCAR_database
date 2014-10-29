@@ -13,7 +13,7 @@
 
 	<!-- query -->
 	<?php
-	$link = mysql_connect("vrbsky-oracle.cs.ua.edu", "usrname", "passwd");
+	$link = mysql_connect("vrbsky-oracle.cs.ua.edu", "usrname", "11499864");
 	if (!$link) {die('Not connected: '. mysql_error()); }
 	mysql_select_db('usrname18') or die ('Could not select database');
 	?>
