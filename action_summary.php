@@ -7,10 +7,10 @@
 
 	<!-- establish the link only -->
 	<?php
-	$link = mysql_connect("vrbsky-oracle.cs.ua.edu", "usrname", "passwd");
+	$link = mysql_connect("vrbsky-oracle.cs.ua.edu", "kwang", "11499864");
 	if (!$link) {die('Not connected: '. mysql_error()); }  // see if connected
 
-	mysql_select_db('usrname18') or die ('Could not select database');  // see if worked
+	mysql_select_db('kwang18') or die ('Could not select database');  // see if worked
 	?>
 
 	<?php 

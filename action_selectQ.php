@@ -10,9 +10,9 @@
 
 	<!-- database link  -->
 	<?php
-	$link = mysql_connect("vrbsky-oracle.cs.ua.edu", "usrname", "passwd");
+	$link = mysql_connect("vrbsky-oracle.cs.ua.edu", "kwang", "11499864");
 	if (!$link) {die('Not connected: '. mysql_error()); }
-	mysql_select_db('usrname18') or die ('Could not select database');
+	mysql_select_db('kwang18') or die ('Could not select database');
 	?>
 
 	<!-- query result -->

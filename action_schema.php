@@ -14,9 +14,9 @@
 	</h1>
 
 	<?php
-	$link = mysql_connect("vrbsky-oracle.cs.ua.edu", "usrname", "passwd");
+	$link = mysql_connect("vrbsky-oracle.cs.ua.edu", "kwang", "11499864");
 	if (!$link) {die('Not connected: '. mysql_error()); }
-	mysql_select_db('usrname18') or die ('Could not select database'); 
+	mysql_select_db('kwang18') or die ('Could not select database'); 
 	$query = "describe " . $tableName; 
 	$result = mysql_query($query, $link);
 	if (!$result) {die( 'Error in SQL: ' . mysql_error());}
@@ -65,7 +65,7 @@
 	</center>
 	<br>
 	<?php
-	$fkQuery = "Select REFERENCED_TABLE_NAME,	REFERENCED_COLUMN_NAME, COLUMN_NAME from INFORMATION_SCHEMA.KEY_COLUMN_USAGE where table_schema = 'usrname18' and TABLE_NAME = \"" . $tableName . "\" and REFERENCED_TABLE_NAME is not null";
+	$fkQuery = "Select REFERENCED_TABLE_NAME,	REFERENCED_COLUMN_NAME, COLUMN_NAME from INFORMATION_SCHEMA.KEY_COLUMN_USAGE where table_schema = 'kwang18' and TABLE_NAME = \"" . $tableName . "\" and REFERENCED_TABLE_NAME is not null";
 	$fkResult = mysql_query($fkQuery, $link);
 	if (!$fkResult) {die( 'Error in SQL: ' . mysql_error());}
 	// echo print_table($fkResult);

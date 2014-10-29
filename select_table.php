@@ -1,11 +1,11 @@
 <?php
 echo "Welcome to Ketong(Kent) Wang's DB";
 // Connect to MySQL
-$link = mysql_connect("vrbsky-oracle.cs.ua.edu", "usrname", "passwd");
+$link = mysql_connect("vrbsky-oracle.cs.ua.edu", "kwang", "11499864");
 if (!$link) {die('Not connected: '. mysql_error()); }  // see if connected
 
 // Select DB will use
-mysql_select_db('usrname18') or die ('Could not select database');  // see if worked
+mysql_select_db('kwang18') or die ('Could not select database');  // see if worked
 
 // Now the query
 $query = "Select * from drivers";     // testit has 2 columns, id and age
