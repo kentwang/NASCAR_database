@@ -64,11 +64,24 @@
 
 	<h2>Insert Tuple into Table</h2>
 	<form method="post" action="action_schema.php">
-				Input a table name to insert <input type="text" name="tableName"> 
-				<input type="submit" value="Submit"> (Note: Table schema will be displayed after submission.)
-			</form>
+		Input a table name to insert <input type="text" name="tableName"> 
+		<input type="submit" value="Submit"> (Note: Table schema will be displayed after submission.)
+	</form>
 	<hr>
 
+	<h2>Type in a SELECT Query</h2>
+	<form method="post" action="action_selectQ.php">
+		What's your SELECT query? (on only one table) <input type="text" name="selectQuery" size = "50"> 
+		<input type="submit" value="Submit">
+	</form>
+	<hr>
+
+	<h2>Delete Tuples From a Table</h2>
+	<form method="post" action="action_delete.php">
+		Your delete query (e.g. DELETE FROM cars WHERE model = "creepy car") <input type="text" name="deleteQuery" size = "50"> 
+		<input type="submit" value="Submit">
+	</form>
+	<hr>
 
   	<?php include 'footer.php';?>
 </div>
